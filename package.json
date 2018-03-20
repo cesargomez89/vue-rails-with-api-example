@@ -1,0 +1,20 @@
+{
+  "name": "social",
+  "private": true,
+  "dependencies": {
+    "@rails/webpacker": "^3.3.1",
+    "axios": "^0.18.0",
+    "bootstrap-vue": "^2.0.0-rc.2",
+    "pug": "^2.0.1",
+    "sass-loader": "^6.0.7",
+    "vue": "^2.5.16",
+    "vue-loader": "^14.2.1",
+    "vue-router": "^3.0.1",
+    "vue-template-compiler": "^2.5.16",
+    "vuex": "^3.0.1",
+    "vuex-router-sync": "^5.0.0"
+  },
+  "devDependencies": {
+    "webpack-dev-server": "2.11.2"
+  }
+}

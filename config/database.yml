@@ -1,0 +1,20 @@
+default: &default
+  adapter: postgresql
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
+  host: localhost
+
+development:
+  <<: *default
+  database: social_development
+
+test:
+  <<: *default
+  database: social_test
+
+production:
+  <<: *default
+  database: social_production
+
+<%= file = File.join(Rails.root, "config", "dblogin.yml")
+        IO.read(file) if File.exist?(file) %>
